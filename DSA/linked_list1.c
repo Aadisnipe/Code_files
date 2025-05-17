@@ -278,6 +278,7 @@ int main()
             break;
         }
     }
+    printf("Exiting the program...\n");
 
     return 0;
 }
