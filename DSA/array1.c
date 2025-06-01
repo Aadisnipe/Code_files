@@ -9,7 +9,7 @@ struct myarray {
 void cjarray(struct myarray*a,int n,int m){
     a->tsize=n;
     a->usize=m;
-    a->ptr=(int*)malloc(n*(sizeof(int)));
+    a->ptr=(int*)malloc(n*(sizeof(int))); // a->ptr = *(a).ptr since a is pointer so it only point address and to get value we first need to derefernce it using * this then we can access every element of structure which we have created using . operator but we are asking for memory address we don't need to derefence structure pointer
 }
 void entervalue(struct myarray*a){
     for(int i=0;i<a->usize;i++){

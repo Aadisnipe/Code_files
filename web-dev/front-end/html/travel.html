@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traavel to Bali</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 10px;
+    }
+
+    form {
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #0072ff;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #0072ff;
+        outline: none;
+    }
+
+    textarea {
+        height: 80px;
+        resize: vertical;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    button {
+        background-color: #0072ff;
+        color: white;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #005ecb;
+    }
+</style>
+
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="Name">
+                Name
+            </label>
+            <input id="Name" type="text" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <label for="Age" >
+                Age
+            </label>
+            <input id="Age" type="number" placeholder="Enter Your Age">
+        </div>
+        <div>
+            <label for="Phone">
+                Phone
+            </label>
+            <input id="Phone" type="tel" placeholder="Enter Your Phone No.">
+        </div>
+        <div>
+            <label for="Email">
+                Email
+            </label>
+            <input id="Email" type="email" placeholder="Enter Your Email">
+        </div>
+        <div>
+            <label for="address">
+                Enter Your Address
+            </label>
+            <textarea name="address" id="address"></textarea>
+        </div>
+        <div>
+            <label for="DOB">
+                Enter Date of Birth
+            </label>
+            <input id="DOB" type="date">
+        </div>
+        <div>
+            <label for="Gender">
+                Gender
+            </label>
+            <select name="Gender" id="Gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Male">Female</option>
+            </select>
+        </div>
+        <div>
+            <p>Budget</p>
+            <input id="Low" type="radio"name="Budget" value="Low">
+            <label for="Low">Low</label>
+            <input id="Medium" type="radio"name="Budget" value="Medium">
+            <label for="Medium">Medium</label>
+            <input id="High" type="radio"name="Budget" value="High">
+            <label for="High">High</label>
+
+        </div>
+        <div>
+            <label for="Correct">
+                Everything filled here is right
+            </label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+</html>

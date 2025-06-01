@@ -30,7 +30,7 @@ int insert(int element,int a[],int index,int *size,int cap){
         (*size)++;
 
         
-    }No insertion possibleNo insertion possible
+    }
         
     
     
