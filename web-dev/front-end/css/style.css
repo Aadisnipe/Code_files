@@ -1,0 +1,105 @@
+html, body {
+    height: 100%; /* Makes sure body takes full viewport height */
+    margin: 0;    /* Removes default margin */
+    padding: 0;   /* Removes default padding */
+    position: relative;
+    z-index: 0;
+}
+
+/* Blurred background using ::before */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1604999333679-b86d54738315?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFsaSUyMHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Text styles */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: purple;
+    margin: 0px;
+    text-shadow: 2px 2px 4px rgba(85, 2, 74, 0.61);
+    font-family: sans-serif;
+    border: 10%;
+}
+
+/* Header box */
+#ttop {
+    border: 2px solid rgb(9, 192, 192);
+    padding: 0px;
+    margin: 20px auto;
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 3px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#ttop:hover {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    background: rgba(51, 223, 194, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #ff1010;
+}
+
+/* Inputs, selects, textareas */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: 0.3s;
+}
+input:focus, textarea:focus, select:focus {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Form field spacing */
+form div {
+    margin-bottom: 20px;
+}
+
+/* Submit button */
+button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #00ffaa;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #00ffaa;
+}

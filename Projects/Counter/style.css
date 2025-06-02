@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(140, 225, 228, 0.884);
+}
+.text-border {
+  border: 2px solid #ff2222;  /* Border around the text */
+  display: inline-block;    /* Shrinks to fit text only */
+  padding: 20px 25px;             /* Optional: adds spacing around text inside border */
+  border-radius: 5px;       /* Optional: for rounded corners */
+  background-color: beige;
+  font-size: 1.5ch;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+label{
+    display: block;
+    text-align: center;
+    font-family: helvetica;
+    font-size:10ch;
+}
+.buttcon{
+    text-align: center;
+}
+.butt{
+    text-align: center;
+    padding: 10px 20px;
+    color: #f04242;
+    background-color:#5b66fc;
+    font-size: large;
+    border-radius: 0.5ch;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.butt:hover{
+    background-color: #c1c5ff;
+}
