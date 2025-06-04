@@ -1,0 +1,113 @@
+html ,body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+.container{
+    height: 70%;
+    min-width: 75%;
+    background-color:  #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 1.25rem;
+    box-shadow:  0 12px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+.heading{
+    font-size: 2rem;
+}
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+#box input {
+  font-size: larger;
+  flex: 1 1 60%;
+  min-width: 120px;
+  border-color:#ccc;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.2rem;
+}
+button{
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.8rem;
+    transition: background-color 0.3s;
+}
+#box button:hover {
+  background-color: #0056b3;
+}
+.between{
+    font-size: 1.5rem;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 1.1rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color: 	#f9f9f9;
+}
+.Attempt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: medium;
+}
+.Hint{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.result{
+    font-size: 160%;  
+}
+#reset {
+  display: none; /* Hidden by default */
+  margin: 1.5rem auto 0 auto; /* Top spacing + center horizontally */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* block + margin: auto => centers */
+}
+
+#reset:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .between {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  #box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #box input,
+  #box button {
+    width: 100%;
+  }
+}

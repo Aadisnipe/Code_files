@@ -1,0 +1,52 @@
+
+//let num=Math.floor(Math.random()*100);  // 0 to 99
+let max=1;
+let Message=max>=90 ? "greater":"smaller";
+console.log (Message);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
