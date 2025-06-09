@@ -1,7 +1,71 @@
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+body,html{
+    height: 100%;  /*takes the entire screen*/
+    margin: 0%;
+    display: flex;
+    background-color: hwb(194 63% 0%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 form{
-    border: 2px solid;
-    box-sizing: 50px;ol
+    min-height:43.5%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: hwb(0 100% 0%);
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 15px hsl(180, 8%, 7%);   
+}
+h1{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.7rem;
+}
+.inputU{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;    /* margin: (top and bottom)px (left and right); */
+}
+.inputU input{
+   width: 100%;
+   padding-right: 78px; /* space for the button */
+   height: 40px;
+   font-size: 16px;
+   border-radius: 0.3rem;
+}
+.inputU button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+}
+.rad{
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;  
 }

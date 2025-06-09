@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Projects/Temp_convert/style.css">
 </head>
+
 <body>
-    
+
     <form>
         <h1>Convert Temperature</h1>
-        <input type="number" placeholder="0">
-        <button onclick="convert">Connvert</button>
+        <div class="inputU">
+            <input type="number" placeholder="0" id="input">
+            <button type="button" onclick="convert()">Connvert</button>
+        </div>
         <br>
-        <input type="radio" name="unit" id="unitC">
-        <label for="unitC"> C to F</label>
+        <div class="rad">
+            <input type="radio" name="unit" id="unitC">
+            <label for="unitC"> C to F</label>
+            <br><br>
+            <input type="radio" name="unit" id="unitF">
+            <label for="unitF"> F to C</label>
+        </div>
         <br>
-        <input type="radio" name="unit" id="unitF">
-        <label for="unitF"> F to C</label>
-        <p>Enter Your unit</p>
+        <p id="result"></p>
     </form>
     <script src="index.JS"></script>
 </body>
+
 </html>
