@@ -1,0 +1,36 @@
+html,body{
+    background-color: hsl(0, 98%, 65%);
+    text-align: center;
+    font-size: large;
+}
+#container{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    padding: 0.6rem rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    background-color: hsl(0, 40%, 60%);
+    border-radius: 0.19rem;
+    border: none;
+}
+button:hover{
+    background-color: hsl(0, 40%, 70%);
+}
+button:active{
+    background-color: hsl(0, 40%, 90%);
+}
+input{
+    text-align: center;
+    font-weight: bold;
+}
+#result_in_images{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    transform: scale(0.4);
+}
