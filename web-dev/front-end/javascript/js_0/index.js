@@ -18,4 +18,5 @@ z=Math.floor(x) //all ways go to next smallest integer
 //z=Math.sign(x); //returns sign of x
 //z=Math.log(x)
 //z=Math.random() //returns random number [0,1) 
-console.log(z);
+console.log(z*8);
+console.log("hi")

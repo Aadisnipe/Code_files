@@ -4,6 +4,7 @@
 //let Name="           Devblock                     ";
 //let string=Name.trim();
 //console.log(Name);
+
 // toUppercase and toowercase
 
 /*let word="Devblock";
@@ -16,20 +17,20 @@ console.log(message);*/
 
 //repeat ,startwith , endwith and includes
 
-// let word="Devblock ";
+// let word="Devblock\n";
 // let message=word.repeat(5);
 // console.log(message);
 
 // let word="Devblock ";
-// let message=word.startsWith("d");
+// let message=word.startsWith("D");
 // console.log(message);
 
 // let word="Devblock ";
 // let message=word.endsWith("d");
 // console.log(message);
 
-// let word="Devblock ";
-// let message=word.includes("");
+// let word="Dev_fuck_block ";
+// let message=word.includes("fuck");
 // console.log(message);
 
 //pading fill the character with desiered value until its of that length

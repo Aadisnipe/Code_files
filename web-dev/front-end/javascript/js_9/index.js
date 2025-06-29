@@ -13,12 +13,12 @@
 
 //callback is used when we want to maintain a specific order by executing function in our desired order
 
-let a=[99,56,4,5];
-// a.forEach(display); // for each value of array it is passing display function with element and index
-// function display(elemet,index){
-//     a[index]=elemet*2;
-//     console.log(a);
-// }
+let a=[2,3,4,5];
+a.forEach(display); // for each value of array it is passing display function with element and index
+function display(elemet,index){
+    a[index]=elemet*2;
+    console.log(a);
+}
 
 //output
 
@@ -63,13 +63,13 @@ let a=[99,56,4,5];
 // b("adam","99");
 
 //prectice callback
-goodbye(hello);
-function hello() {
-    console.log("hello");
-}
+// goodbye(hello);
+// function hello() {
+//     console.log("hello");
+// }
 
-function goodbye(callback) {
-    console.log("goodbye");
-    callback()
-}
-window.print();
+// function goodbye(callback) {
+//     console.log("goodbye");
+//     callback()
+// }
+// window.print();
