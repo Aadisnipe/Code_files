@@ -6,15 +6,15 @@
 
 //systax cleartimeout(timeid) , timeid is the variable whih stores settiimeout function
 
-// let a=setTimeout(() => {console.log("hello")},2000);
+let a=setTimeout(() => {console.log("hello")},2000);
 // clearTimeout(a);
-let a
-function start() {
-    a=setTimeout(()=>{window.alert("Hello")},3000);
-    console.log("started");
-}
+// let a
+// function start() {
+//     a=setTimeout(()=>{window.alert("Hello")},3000);
+//     console.log("started");
+// }
 
-function end() {
-    clearTimeout(a);
-    console.log("ended");
-}
+// function end() {
+//     clearTimeout(a);
+//     console.log("ended");
+// }
