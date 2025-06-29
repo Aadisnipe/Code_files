@@ -20,17 +20,43 @@ struct stack*push(int data){
     top=temp;
     printf("Pushed %d\n",data);
 }
-int main(){
-    push(35);
-    push(95);
-    push(985);
-    push(05);
+struct stack*pop(){
+    if (top==NULL)
+    {
+        printf("Underflow\n");
+        exit(1);
+    }
+    struct stack*temp=top;
+    printf("Poped:%d\n",top->data);
+    top=temp->link;
+    free(temp);
+}
+int peek(){
+    if (top==NULL)
+    {
+        printf("underflow\n");
+        exit(1);
+    }
+    printf("%d\n",top->data);   
+}
+int size(){
+    int i=0;
     struct stack*ptr=top;
     while (ptr!=NULL)
     {
-        printf("%d\n",ptr->data);
-        ptr=ptr->link;
+        
     }
+    
+}
+int main(){
+    push(35);
+    peek();
+    // struct stack*ptr=top;
+    // while (ptr!=NULL)
+    // {
+    //     printf("%d\n",ptr->data);
+    //     ptr=ptr->link;
+    // }
     
 }
 
