@@ -1,0 +1,68 @@
+#myh1{
+    font-size: 3.2rem;
+    text-align: center;
+}
+#container {
+    display: flex;
+    flex-shrink: initial;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid black;
+    border-radius: 20px;
+}   
+#timer {
+    font-size: 4.5rem;
+    padding: 50px;
+    margin-bottom: 25px;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;   
+}
+#startBtn{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 15px 15px;
+    color: white;
+    background-color: hsl(120, 100%, 25%);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#startBtn:hover{
+     background-color: hsl(120, 90%, 45%);
+}
+#stopBtn{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 15px 15px;
+    color: white;
+    background-color: hsla(0, 100%, 50%);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#stopBtn:hover{
+     background-color: hsl(0, 100%, 50%, 0.733 );
+}
+#resetBtn{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 15px 15px;
+    color: white;
+    background-color: hsl(240, 100%, 50%);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#resetBtn:hover{
+     background-color: hsl(240, 100%, 50%, 0.733 );
+}

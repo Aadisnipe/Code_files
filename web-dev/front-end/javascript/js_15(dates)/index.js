@@ -29,12 +29,16 @@
 
 // comparison of dates
 
-const date01 = new Date("2026-01-01");
-const date02 = new Date("2026-01-01");
+// const date01 = new Date("2026-01-01");
+// const date02 = new Date("2026-01-01");
 
-if (date02.getTime() === date01.getTime()) {
-    console.log("happy new year");
-}
-else{
-    console.log("no not today");
-}
+// if (date02.getTime() === date01.getTime()) {
+//     console.log("happy new year");
+// }
+// else{
+//     console.log("no not today");
+// }
+
+let a =new Date();
+let b=Date.now()-0
+console.log(b);
