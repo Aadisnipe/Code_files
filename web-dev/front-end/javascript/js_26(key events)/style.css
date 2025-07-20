@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #f0f0f0;
+}body {
+  cursor: none;
+}
+#box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  pointer-events: none; /* So it doesn't block mouse events */
+  transition: top 0.1s linear, left 0.1s linear; /* Smooth movement */
+}
+#box {
+  user-select: none;
+}

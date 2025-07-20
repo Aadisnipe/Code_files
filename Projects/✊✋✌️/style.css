@@ -1,0 +1,47 @@
+* {
+  caret-color: transparent;   /* Hides blinking text cursor */
+  user-select: none;          /* Disables text selection */
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsla(0, 0%, 23%, 0.322);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3.9rem;
+    color: rgb(67, 70, 50);
+}
+button {
+    font-size: 6rem;
+    border-radius: 250px;
+    margin: 0 15px ;
+    margin-bottom: 20px;
+    background-color: hsl(187, 97%, 47%);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+} 
+button:hover{
+    background-color:hsl(204, 97%, 47%);
+}
+.Choice{
+    font-size: 2.3rem;
+    margin: 10px;
+}
+#result{
+    font-size: 3rem;
+    margin: 19px;
+    font-weight: bold;
+}
+.win{
+    color: green !important;
+}
+.lose{
+    color: red !important;
+}

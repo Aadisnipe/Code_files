@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rainbow Box</title>
+  <style>
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin: 100px auto;
+      border: 2px solid #000;
+      cursor: pointer;
+      transition: background-color 0.5s;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="colorBox"></div>
+
+  <script>
+    const box = document.getElementById("colorBox");
+
+    const rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    let currentIndex = 0;
+
+    box.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % rainbowColors.length;
+      box.style.backgroundColor = rainbowColors[currentIndex];
+      console.log(currentIndex);
+    });
+  </script>
+
+</body>
+</html>
