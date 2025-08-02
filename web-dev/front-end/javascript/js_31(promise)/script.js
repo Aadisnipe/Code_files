@@ -21,7 +21,7 @@ function task1 (){
 function task2 (){
     return new Promise((resolve,reject)=>{
         setTimeout(() => {
-            let completion=false;
+            let completion=true;
             if(completion){
                 resolve("Task 2")
             }

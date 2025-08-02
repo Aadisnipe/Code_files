@@ -23,8 +23,8 @@
 
 const person ={
     name:"jhonny",
-    size:"6 inch",
+    size:6,
     colour:"black",
     work:function(){console.log(`${this.name} bang people`)} //this.name is same as person.name
 };
-person.work();
+console.log(person.size+8)
