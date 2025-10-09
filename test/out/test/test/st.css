@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at center, #000 0%, #0a0a0a 100%);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.universe {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #ffcc00, #ff9900);
+  box-shadow: 0 0 30px #ffcc00, 0 0 60px #ff9900;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.orbit1 {
+  width: 200px;
+  height: 200px;
+  animation: spin 10s linear infinite;
+}
+
+.orbit2 {
+  width: 320px;
+  height: 320px;
+  animation: spin 15s linear infinite;
+}
+
+.orbit3 {
+  width: 450px;
+  height: 450px;
+  animation: spin 22s linear infinite;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.planet1 {
+  background: #00ccff;
+  box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
+}
+
+.planet2 {
+  background: #ff66cc;
+  box-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+}
+
+.planet3 {
+  background: #99ff33;
+  box-shadow: 0 0 10px #99ff33, 0 0 20px #99ff33;
+}
+
+@keyframes spin {
+  0%   { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
