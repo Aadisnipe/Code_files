@@ -9,21 +9,16 @@ const messages = [
 ];
 
 function App() {
-  // const [step, setStep] = useState(1);
+  const [step, setStep] = useState(1);
   const [isOpen, setisOpen] = useState(true);
-  let step = 1;
   function handleprev() {
     if (step > 1) {
-      // setStep((step) => step - 1);
-      step--;
-      console.log(step);
+      setStep((step) => step - 1);
     }
   }
   function handlenext() {
     if (step < 3) {
-      // setStep((step) => step + 1);
-      step++;
-      console.log(step);
+      setStep((step) => step + 1);
     }
   }
   return (

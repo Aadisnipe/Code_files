@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel to Bali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      backdrop-filter: blur(4px);
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0072ff;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: transparent;
+      font-size: 16px;
+      transition: border 0.3s;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      color: #888;
+      font-size: 14px;
+      background: white;
+      padding: 0 5px;
+      transition: 0.2s;
+      pointer-events: none;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label,
+    .form-group select:focus + label,
+    .form-group select:not([value=""]) + label {
+      top: -8px;
+      left: 10px;
+      font-size: 12px;
+      color: #0072ff;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #0072ff;
+      outline: none;
+    }
+
+    .radio-group, .checkbox-group {
+      margin-bottom: 20px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      margin-right: 15px;
+      font-weight: 500;
+    }
+
+    button {
+      background: #0072ff;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #005ecb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+      animation: fadeIn 0.5s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <form id="baliForm">
+    <h2>Travel to Bali - Booking Form</h2>
+
+    <div class="form-group">
+      <input id="Name" type="text" placeholder=" " required>
+      <label for="Name">Name</label>
+    </div>
+
+    <div class="form-group">
+      <input id="Age" type="number" placeholder=" " required>
+      <label for="Age">Age</label>
+    </div>
+
+    <div class="form-group">
+      <input id="Phone" type="tel" placeholder=" " required>
+      <label for="Phone">Phone</label>
+    </div>
+
+    <div class="form-group">
+      <input id="Email" type="email" placeholder=" " required>
+      <label for="Email">Email</label>
+    </div>
+
+    <div class="form-group">
+      <textarea id="address" placeholder=" " required></textarea>
+      <label for="address">Address</label>
+    </div>
+
+    <div class="form-group">
+      <input id="DOB" type="date" required>
+      <label for="DOB">Date of Birth</label>
+    </div>
+
+    <div class="form-group">
+      <select id="Gender" required>
+        <option value="" disabled selected hidden></option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <label for="Gender">Gender</label>
+    </div>
+
+    <div class="radio-group">
+      <p>Budget:</p>
+      <input type="radio" id="Low" name="Budget" value="Low" required>
+      <label for="Low">Low</label>
+      <input type="radio" id="Medium" name="Budget" value="Medium">
+      <label for="Medium">Medium</label>
+      <input type="radio" id="High" name="Budget" value="High">
+      <label for="High">High</label>
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="Correct" required>
+      <label for="Correct">Everything filled is correct</label>
+    </div>
+
+    <button type="submit">Submit</button>
+
+    <div class="success-message" id="successMessage">Form submitted successfully!</div>
+  </form>
+
+  <script>
+    const form = document.getElementById('baliForm');
+    const message = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // simulate form submission
+      message.style.display = 'block';
+
+      setTimeout(() => {
+        message.style.display = 'none';
+        form.reset();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

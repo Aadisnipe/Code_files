@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="base_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Tkinter_calc/calculator/base_library.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
