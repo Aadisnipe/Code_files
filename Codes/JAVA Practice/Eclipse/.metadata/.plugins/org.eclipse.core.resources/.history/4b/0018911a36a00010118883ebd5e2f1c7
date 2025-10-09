@@ -1,0 +1,68 @@
+package game;
+
+public class GameController {
+    private Board board;
+    private Player player1, player2;
+    private Player currentPlayer;
+
+    public GameController(Player p1, Player p2) {
+        this.board = new Board();
+        this.player1 = p1;
+        this.player2 = p2;
+        this.currentPlayer = p1; // Player 1 starts
+    }
+
+    public boolean makeMove(int row, int col) {
+        boolean success = board.placeMove(row, col, currentPlayer.getSymbol());
+        if (success) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean checkWin() {
+        char sym = currentPlayer.getSymbol();
+        int size = board.getSize();
+
+        // check rows
+        for (int i = 0; i < size; i++) {
+            if (board.getCell(i, 0) == sym && 
+                board.getCell(i, 1) == sym && 
+                board.getCell(i, 2) == sym) return true;
+        }
+
+        // check cols
+        for (int j = 0; j < size; j++) {
+            if (board.getCell(0, j) == sym && 
+                board.getCell(1, j) == sym && 
+                board.getCell(2, j) == sym) return true;
+        }
+
+        // check diagonals
+        if (board.getCell(0, 0) == sym && 
+            board.getCell(1, 1) == sym && 
+            board.getCell(2, 2) == sym) return true;
+
+        if (board.getCell(0, 2) == sym && 
+            board.getCell(1, 1) == sym && 
+            board.getCell(2, 0) == sym) return true;
+
+        return false;
+    }
+
+    public boolean isDraw() {
+        return board.isFull() && !checkWin();
+    }
+
+    public void switchTurn() {
+        currentPlayer = (currentPlayer == player1) ? player2 : player1;
+    }
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+}

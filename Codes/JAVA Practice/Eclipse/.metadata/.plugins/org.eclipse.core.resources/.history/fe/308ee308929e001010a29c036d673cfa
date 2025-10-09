@@ -1,0 +1,48 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class GameMenu {
+
+    public static void main(String[] args) {
+        // Create main frame
+        JFrame frame = new JFrame("Game Menu");
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null); // center on screen
+        frame.setLayout(new GridLayout(2, 1, 10, 10));
+
+        // Create Start button
+        JButton startButton = new JButton("Start Game");
+        startButton.setFont(new Font("Arial", Font.BOLD, 20));
+
+        // Create Exit button
+        JButton exitButton = new JButton("Exit");
+        exitButton.setFont(new Font("Arial", Font.BOLD, 20));
+
+        // Add action for Start button
+        startButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // For now just show a message
+                JOptionPane.showMessageDialog(frame, "Game Started!");
+                
+                // You can call your game logic here instead of message
+                // new YourGameClass().start();
+            }
+        });
+
+        // Add action for Exit button
+        exitButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0); // Close program
+            }
+        });
+
+        // Add buttons to frame
+        frame.add(startButton);
+        frame.add(exitButton);
+
+        // Show frame
+        frame.setVisible(true);
+    }
+}

@@ -1,0 +1,12 @@
+
+public class Car {
+	String Name;
+	String Color;
+	Car(String Name, String Color){
+		this.Name=Name;
+		this.Color=Color;
+	}
+	public void display() {
+		System.out.println("This car is "+this.Name" of "+this.Color);
+	}
+}

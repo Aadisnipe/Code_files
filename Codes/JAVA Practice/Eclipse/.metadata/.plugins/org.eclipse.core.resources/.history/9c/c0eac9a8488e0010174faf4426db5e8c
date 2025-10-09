@@ -1,0 +1,13 @@
+
+public class Varargs {
+	public static void main(String[] args) {
+		// is ellipsis"..." is same as rest operator in Javascript "..." it helps to take a array of value
+		System.out.println(add(4,5,3,2,3));
+	}
+
+	static int add(int... numbers) {
+		for (int i : numbers) {
+			return i;
+		}
+	}
+}

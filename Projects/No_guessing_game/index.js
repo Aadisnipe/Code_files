@@ -7,7 +7,7 @@ const reset = document.getElementById("reset");
 let min = 2;
 let max = 100;
 let random = Math.floor(Math.random() * (max - min )) + min;
-let Tattempt=10;
+let Tattempt=5;
 let Uattempt=Tattempt;
 let win;
 Check.onclick=function(){
@@ -20,7 +20,7 @@ Check.onclick=function(){
         gresult.style.color="green";
         gresult.textContent=`You Win in ${win} attempt & the No. was ${random}`;
         ghint.textContent="";
-        Uattempt=10;
+        Uattempt=5;
         Check.disabled = true; //this blocks clicking this button
         reset.style.display = "block";
     }

@@ -1,0 +1,46 @@
+import game.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Create players
+        Player p1 = new Player("Player 1", 'X');
+        Player p2 = new Player("Player 2", 'O');
+
+        GameController game = new GameController(p1, p2);
+
+        System.out.println("Welcome to Tic-Tac-Toe!");
+        game.getBoard().printBoard();
+
+        while (true) {
+            Player current = game.getCurrentPlayer();
+            System.out.println(current.getName() + " (" + current.getSymbol() + ") turn.");
+            
+            System.out.print("Enter row (0-2): ");
+            int row = sc.nextInt();
+            System.out.print("Enter col (0-2): ");
+            int col = sc.nextInt();
+
+            if (!game.makeMove(row, col)) {
+                System.out.println("Invalid move, try again.");
+                continue;
+            }
+
+            game.getBoard().printBoard();
+
+            if (game.checkWin()) {
+                System.out.println(current.getName() + " wins!");
+                break;
+            } else if (game.isDraw()) {
+                System.out.println("It's a draw!");
+                break;
+            }
+
+            game.switchTurn();
+        }
+
+        sc.close();
+    }
+}

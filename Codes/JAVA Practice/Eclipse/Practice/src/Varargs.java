@@ -1,0 +1,12 @@
+public class Varargs {
+    public static void main(String[] args) {
+        // Passing multiple values
+        add(4, 5, 3, 2, 3);
+    }
+
+    static void add(int... numbers) {
+        for (int i : numbers) {
+            System.out.println(i); // ✅ print each value
+        }
+    }
+}

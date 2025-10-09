@@ -1,0 +1,72 @@
+import java.util.*;
+public class Slot {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int balance;
+		balance=100;
+		char play='Y';
+		while(play == 'Y' || play == 'y') {
+		//Welcome screen
+		System.out.print(""" 
+				**********************************
+				  WELOCME TO JAVA SLOT MACHINE
+				  Symbols: 🍒 🍉 🍋 🔔 ⭐
+				**********************************
+				""");
+		// current balance
+		System.out.println("Current Balance: $"+balance);
+		//betting amount
+		int amt;
+		System.out.print("Enter betting amount: ");
+		amt=sc.nextInt();
+		//spin start
+		 String[] emojis = {"🍒", "🍉", "🍋", "🔔", "⭐"};
+		 Random rand = new Random();
+		 int[] values = new int[3];
+		 int value;
+		 System.out.println("Spinning............");
+		 for(int i=0;i<3;i++) {
+			 value=rand.nextInt(0,5);
+			 values[i]=value;
+		 }
+		 for (int i : values) {
+			System.out.println(i);
+		}
+		//check symbol matching
+		 boolean match =true;
+		 for (int i = 0; i < (values.length)-1; i++) {
+			if (values[i]!=values[i+1]) {
+				match=false;
+				break;
+			}
+		}
+		if(match) {
+			System.out.println("You Win");
+			balance=balance+amt;
+			for (int i : values) {
+				System.out.printf("""
+						******************
+						   %d |
+						""",emojis[i]);
+			}
+		}
+		else {
+			System.out.println("you Lose");
+			balance=balance-amt;
+			for (int i : values) {
+				System.out.printf("""
+						******************
+						   %d |
+						""",emojis[i]);
+		}
+			
+		//update balance
+		System.out.print("Try again(Y/N):");
+		play=sc.next().charAt(0);
+	}
+		System.out.println("Exiting.......");
+		sc.close();
+}
+}
+}

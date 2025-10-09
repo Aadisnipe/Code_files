@@ -1,0 +1,20 @@
+
+public class Slot {
+
+	public static void main(String[] args) {
+		//Welcome screen
+		System.out.print(""" 
+				**********************************
+				  WELOCME TO JAVA SLOT MACHINE
+				  Symbols: 🍒 🍉 🍋 🔔 ⭐
+				**********************************
+				""");
+		// current balance
+		//betting amount
+		//spin start
+		//check symbol matching
+		//update balance
+
+	}
+
+}

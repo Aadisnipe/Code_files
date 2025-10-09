@@ -1,0 +1,27 @@
+import java.util.*;
+public class Slot {
+
+	public static void main(String[] args) {
+		//Welcome screen
+		System.out.print(""" 
+				**********************************
+				  WELOCME TO JAVA SLOT MACHINE
+				  Symbols: 🍒 🍉 🍋 🔔 ⭐
+				**********************************
+				""");
+		// current balance
+		int balance;
+		balance=100;
+		System.out.println("Current Balance: $"+balance);
+		//betting amount
+		int amt;
+		System.out.print("Enter betting amount: ");
+		Scanner sc = new Scanner(System.in);
+		amt=sc.nextInt();
+		//spin start
+		//check symbol matching
+		//update balance
+
+	}
+
+}
